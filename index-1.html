@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Susu Kambing Murni | Abah Agro &amp; Farm</title>
+<link rel="icon" href="images/logo-abah.png">
+<meta name="description" content="Susu kambing murni tanpa tambahan, isi 250 ml hanya 12rb. Ready setiap hari di Kranggan, Bekasi. Pesan lewat WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Caveat:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14284b;
+    --biru:#2f86d6;
+    --biru-tua:#1f6bb8;
+    --biru-muda:#e3f0fc;
+    --biru-pucat:#f2f8fe;
+    --putih:#ffffff;
+    --teks:#1e2a3d;
+    --abu:#5b6a80;
+    --garis:#d5e5f6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Nunito",Arial,sans-serif;font-size:17px;line-height:1.65;color:var(--teks);
+       background:linear-gradient(180deg,#ffffff 0%,var(--biru-pucat) 60%,#ffffff 100%)}
+  h1,h2,h3{font-family:"Baloo 2","Nunito",sans-serif;font-weight:800;color:var(--navy);line-height:1.15;margin:0 0 .4em}
+  a{color:var(--biru-tua)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  .tulis{font-family:"Caveat",cursive;font-weight:700}
+
+  /* Navigasi */
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--garis)}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 20px}
+  .merek{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .merek img{width:58px;height:58px;object-fit:contain;mix-blend-mode:multiply}
+  .merek span{font-family:"Baloo 2",sans-serif;font-weight:800;color:var(--navy);font-size:1.15rem;line-height:1.1}
+
+  .btn{display:inline-block;background:var(--biru);color:#fff;text-decoration:none;padding:12px 24px;border-radius:999px;
+       font-family:"Nunito",sans-serif;font-size:1rem;font-weight:800;border:0;cursor:pointer;box-shadow:0 6px 14px rgba(47,134,214,.28)}
+  .btn:hover{background:var(--biru-tua)}
+  .btn.navy{background:var(--navy);box-shadow:0 6px 14px rgba(20,40,75,.28)}
+  .btn.navy:hover{background:#0c1a33}
+  .btn.garis{background:transparent;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
+  .btn.garis:hover{background:var(--navy);color:#fff}
+
+  /* Hero */
+  .hero{padding:44px 0 30px;position:relative;overflow:hidden}
+  .hero .wrap{display:grid;gap:26px;grid-template-columns:1.15fr .85fr;align-items:center}
+  .hero h1{font-size:3.6rem;margin:0}
+  .hero h1 .murni{display:inline-block;background:var(--biru);color:#fff;padding:0 .35em .05em;border-radius:12px 40px 14px 36px;transform:rotate(-3deg);margin:.08em 0 .1em}
+  .hero .tulis.sub{font-size:1.9rem;color:var(--navy);display:block;border-bottom:3px solid var(--biru);width:max-content;padding-right:.4em;line-height:1.2}
+  .hero p.lead{max-width:520px;margin:16px 0 0}
+  .aksi{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .kolom-kanan{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .stempel{width:150px;height:auto;mix-blend-mode:multiply}
+  .lencana{justify-self:center;text-align:center;color:#fff;background:var(--biru);
+           border-radius:58% 42% 52% 48% / 48% 56% 44% 52%;padding:34px 34px 30px;max-width:300px;transform:rotate(-4deg);
+           box-shadow:0 12px 26px rgba(47,134,214,.35)}
+  .lencana .tulis{font-size:1.9rem;display:block;line-height:1}
+  .lencana .angka{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:5rem;line-height:1;display:block;letter-spacing:-1px}
+  .lencana .isi{font-family:"Caveat",cursive;font-weight:700;font-size:1.6rem;display:block;border-top:3px solid rgba(255,255,255,.7);margin-top:8px;padding-top:6px}
+
+  .foto{margin-top:22px}
+  .foto img{display:block;width:100%;border-radius:22px;border:6px solid #fff;box-shadow:0 14px 30px rgba(20,40,75,.18)}
+
+  /* Seksi */
+  section{padding:52px 0}
+  section h2{font-size:2.2rem}
+  section .pengantar{max-width:640px;color:var(--abu)}
+  .alt{background:var(--biru-muda)}
+
+  /* Manfaat */
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));margin-top:20px}
+  .manfaat{display:flex;gap:14px;align-items:flex-start;background:var(--putih);border-radius:20px;padding:16px 18px;border:1px solid var(--garis)}
+  .manfaat .ikon{flex:0 0 52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+  .manfaat h3{font-size:1.15rem;margin:0 0 2px}
+  .manfaat p{margin:0;color:var(--abu);font-size:1rem}
+  .catatan{margin-top:18px;background:#fff;border-left:5px solid var(--biru);border-radius:10px;padding:12px 16px;color:var(--abu);font-size:1rem}
+
+  /* Produk */
+  .produk{display:grid;gap:22px;grid-template-columns:1fr 1fr;align-items:center;margin-top:18px}
+  .produk .kartu{background:#fff;border-radius:24px;border:1px solid var(--garis);padding:26px;box-shadow:0 10px 24px rgba(20,40,75,.08)}
+  .produk h3{font-size:1.5rem}
+  .harga{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:2.6rem;color:var(--biru-tua);line-height:1}
+  .harga small{font-size:1rem;font-family:"Nunito",sans-serif;font-weight:600;color:var(--abu)}
+  .stok{display:inline-block;margin-top:12px;font-family:"Caveat",cursive;font-weight:700;font-size:1.5rem;color:var(--navy);background:var(--biru-muda);padding:2px 16px;border-radius:999px}
+  ul.cek{list-style:none;padding:0;margin:14px 0 0}
+  ul.cek li{padding-left:28px;position:relative;margin:6px 0}
+  ul.cek li::before{content:"\2713";position:absolute;left:0;top:0;color:#fff;background:var(--biru);width:20px;height:20px;border-radius:50%;font-size:.8rem;line-height:20px;text-align:center;font-weight:800}
+
+  /* Form */
+  form{display:grid;gap:14px;max-width:560px;margin-top:18px}
+  label{font-weight:800;font-size:.95rem;display:block;margin-bottom:4px;color:var(--navy)}
+  input,textarea{width:100%;padding:12px 14px;border:1.5px solid #b9d3ee;border-radius:14px;font-size:1rem;font-family:"Nunito",sans-serif;background:#fff;color:var(--teks)}
+  input:focus,textarea:focus{outline:3px solid rgba(47,134,214,.35);border-color:var(--biru)}
+  .baris{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+  .ringkas{background:#fff;border:1.5px dashed var(--biru);border-radius:14px;padding:12px 16px;font-weight:800;color:var(--navy)}
+  .kecil{font-size:.95rem;color:var(--abu)}
+
+  /* Lokasi */
+  .lokasi{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--garis);border-radius:24px;padding:22px 24px;margin-top:18px}
+  .lokasi .pin{font-size:2.4rem}
+  .lokasi h3{margin:0;font-size:1.5rem}
+  .lokasi p{margin:2px 0 0;color:var(--abu)}
+  .lokasi .btn{margin-left:auto}
+
+  footer{background:var(--navy);color:#dbe8f7;padding:30px 0 96px;text-align:center}
+  footer a{color:#fff}
+  footer .tulis{font-size:1.6rem;color:#fff}
+  footer .logo-foot{display:block;margin:0 auto 10px;width:120px;height:120px;object-fit:contain;background:#fff;border-radius:50%;padding:4px}
+
+  /* WhatsApp mengambang */
+  .wa-float{position:fixed;right:16px;bottom:16px;z-index:30;background:#1f9d55;color:#fff;text-decoration:none;font-weight:800;
+            padding:13px 20px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+  .wa-float:hover{background:#17803f}
+
+  @media(max-width:760px){
+    .hero .wrap{grid-template-columns:1fr}
+    .hero h1{font-size:2.9rem}
+    .produk{grid-template-columns:1fr}
+    .lokasi .btn{margin-left:0}
+    .merek span{font-size:1rem}
+  }
+  @media(max-width:480px){
+    .baris{grid-template-columns:1fr}
+    header.nav .btn{padding:10px 16px;font-size:.9rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="merek" href="#atas">
+      <img src="images/logo-abah.png" alt="Logo Abah Agro and Farm">
+      <span>Abah<br>Agro &amp; Farm</span>
+    </a>
+    <a class="btn" id="waAtas" href="#" target="_blank" rel="noopener">Pesan Sekarang</a>
+  </div>
+</header>
+
+<main id="atas">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Susu<br>Kambing<br><span class="murni">Murni</span></h1>
+        <span class="tulis sub">Tanpa Tambahan</span>
+        <p class="lead">Susu kambing segar yang sehat, alami, dan bergizi. Tanpa campuran apa pun, siap menemani sarapan dan hari-hari keluarga Anda.</p>
+        <div class="aksi">
+          <a class="btn" href="#pesan">Pesan Sekarang</a>
+          <a class="btn garis" href="#manfaat">Lihat Manfaatnya</a>
+        </div>
+      </div>
+      <div class="kolom-kanan">
+        <img class="stempel" src="images/stempel.jpg" alt="100% Susu Kambing Murni">
+        <div class="lencana">
+          <span class="tulis">Harga</span>
+          <span class="angka">12RB</span>
+          <span class="isi">Isi &plusmn;250 ml</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="foto"><img src="images/foto-produk.jpg" alt="Botol susu kambing murni dengan label Susu Kambing, ada kambing putih dan segelas susu"></div>
+    </div>
+  </div>
+
+  <section id="manfaat" class="alt">
+    <div class="wrap">
+      <h2>Manfaat susu kambing</h2>
+      <p class="pengantar">Susu kambing sudah lama dipilih banyak keluarga. Ini beberapa alasan kenapa.</p>
+      <div class="grid">
+        <div class="manfaat"><div class="ikon">&#128737;</div><div><h3>Baik untuk daya tahan tubuh</h3><p>Mengandung vitamin dan mineral yang membantu tubuh tetap bugar.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#129379;</div><div><h3>Mudah dicerna</h3><p>Butiran lemaknya lebih kecil, sehingga banyak orang merasa lebih nyaman di perut.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#129460;</div><div><h3>Menjaga kesehatan tulang dan gigi</h3><p>Sumber kalsium dan fosfor yang dibutuhkan tulang dan gigi.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#10084;</div><div><h3>Baik untuk pencernaan</h3><p>Kandungannya ramah untuk sistem pencernaan sehari-hari.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#128170;</div><div><h3>Sumber protein</h3><p>Protein membantu pertumbuhan dan perbaikan sel tubuh.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#127807;</div><div><h3>Kaya vitamin dan mineral</h3><p>Memiliki vitamin A, B, serta kalium dan magnesium.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#129371;</div><div><h3>Alternatif bagi yang kurang cocok susu sapi</h3><p>Sebagian orang merasa lebih cocok dengan susu kambing.</p></div></div>
+        <div class="manfaat"><div class="ikon">&#10024;</div><div><h3>Murni dan alami</h3><p>Tanpa tambahan gula, pengawet, atau pewarna.</p></div></div>
+      </div>
+      <div class="catatan">Catatan: manfaat di atas bersifat umum dan bukan pengganti obat. Orang dengan alergi susu, serta bayi di bawah satu tahun, sebaiknya berkonsultasi dulu dengan dokter.</div>
+    </div>
+  </section>
+
+  <section id="produk">
+    <div class="wrap">
+      <h2>Produk kami</h2>
+      <div class="produk">
+        <div class="kartu">
+          <h3>Susu Kambing Murni</h3>
+          <div class="harga">Rp12.000 <small>/ botol &plusmn;250 ml</small></div>
+          <span class="stok">Stok melimpah, ready setiap hari, insyaallah</span>
+          <ul class="cek">
+            <li>100% susu kambing murni</li>
+            <li>Tanpa tambahan apa pun</li>
+            <li>Dikemas dalam botol bersih dan tertutup rapat</li>
+          </ul>
+        </div>
+        <div class="foto" style="margin:0"><img src="images/foto-produk.jpg" alt="Botol Susu Kambing Murni isi 250 ml"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pesan" class="alt">
+    <div class="wrap">
+      <h2>Pesan lewat WhatsApp</h2>
+      <p class="pengantar">Isi data singkat ini. Pesanan akan tersusun otomatis dan terbuka di WhatsApp, tinggal Anda kirim.</p>
+      <form id="formPesan">
+        <div>
+          <label for="nama">Nama</label>
+          <input id="nama" required placeholder="Nama Anda">
+        </div>
+        <div>
+          <label for="jumlah">Jumlah botol (250 ml)</label>
+          <input id="jumlah" type="number" min="1" value="1" required>
+        </div>
+        <div>
+          <label for="alamat">Alamat pengantaran</label>
+          <textarea id="alamat" rows="2" placeholder="Contoh: Kranggan, Bekasi, dekat ..."></textarea>
+        </div>
+        <div>
+          <label for="catatan">Catatan (opsional)</label>
+          <input id="catatan" placeholder="Misalnya: diantar sore hari">
+        </div>
+        <div class="ringkas" id="ringkas">Perkiraan total: Rp12.000</div>
+        <button class="btn" type="submit">Kirim pesanan ke WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="lokasi">
+    <div class="wrap">
+      <h2>Lokasi kami</h2>
+      <div class="lokasi">
+        <div class="pin">&#128205;</div>
+        <div>
+          <h3>Kranggan, Bekasi</h3>
+          <p>Buka petunjuk arah lewat Google Maps.</p>
+        </div>
+        <a class="btn navy" id="linkMaps" href="https://share.google/f1dDKtccDwThZjRSg" target="_blank" rel="noopener">Buka di Maps</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="logo-foot" src="images/logo-abah.png" alt="Logo Abah Agro and Farm">
+    <div class="tulis">Sehat, Alami, Berkah</div>
+    <div>Abah Agro &amp; Farm, Kranggan Bekasi</div>
+    <div style="margin-top:6px">WhatsApp: <a id="waBawah" href="#" target="_blank" rel="noopener">0896 3296 5550</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waMengambang" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+
+<script>
+/* ==========================================================
+   PENGATURAN: ubah bagian ini saja
+   ========================================================== */
+const PENGATURAN = {
+  nomorWA: "6289632965550",   // 089632965550, ditulis dengan awalan 62
+  hargaSatuan: 12000          // harga per botol 250 ml
+};
+/* ========================================================== */
+
+const rupiah = n => "Rp" + n.toLocaleString("id-ID");
+const $ = id => document.getElementById(id);
+
+const waDasar = "https://wa.me/" + PENGATURAN.nomorWA;
+const sapa = waDasar + "?text=" + encodeURIComponent("Assalamualaikum, saya ingin bertanya tentang susu kambing murni.");
+["waAtas","waBawah","waMengambang"].forEach(id => $(id).href = sapa);
+
+function hitung(){
+  const j = Math.max(1, parseInt($("jumlah").value || "1", 10));
+  const total = j * PENGATURAN.hargaSatuan;
+  $("ringkas").textContent = "Perkiraan total: " + rupiah(total) + " (" + j + " x " + rupiah(PENGATURAN.hargaSatuan) + ")";
+  return { j, total };
+}
+$("jumlah").addEventListener("input", hitung);
+hitung();
+
+$("formPesan").addEventListener("submit", e => {
+  e.preventDefault();
+  const { j, total } = hitung();
+  const baris = [
+    "Assalamualaikum, saya ingin memesan:",
+    "",
+    "Nama: " + $("nama").value.trim(),
+    "Pesanan: Susu Kambing Murni 250 ml x " + j,
+    "Perkiraan total: " + rupiah(total),
+    "Alamat: " + ($("alamat").value.trim() || "-"),
+    "Catatan: " + ($("catatan").value.trim() || "-")
+  ];
+  window.open(waDasar + "?text=" + encodeURIComponent(baris.join("\n")), "_blank");
+});
+</script>
+</body>
+</html>
